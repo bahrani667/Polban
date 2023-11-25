@@ -40,7 +40,7 @@ const MainMenu = () => {
           <li className="d-block d-lg-none">
             <div className="logo">
               <Link href="/" className="d-block">
-                <img src="/images/logo/logo_01.png" alt="" width={95} />
+                <img src="/images/logo/Polban.png" alt="" width={60} />
               </Link>
             </div>
           </li>
@@ -63,86 +63,57 @@ const MainMenu = () => {
           <li className="nav-item  dropdown">
             <a
               // className="nav-link dropdown-toggle"
-              className={(pagesItems.some(menu=>menu.subItems.some(elm=>isActive(elm.link))) || isActive('/pages-menu/pricing') || isActive('/pages-menu/testimonials') ) ? 'nav-link dropdown-toggle active-menu' : 'nav-link dropdown-toggle'}
-
+              className={(pagesItems.some(menu=>menu.subItems.some(elm=>isActive(elm.link))) || isActive('#') || isActive('#') ) ? 'nav-link dropdown-toggle active-menu' : 'nav-link dropdown-toggle'}
               href="#"
               role="button"
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
             >
-              Prestasi
+              Jurusan
             </a>
-            <ul className="dropdown-menu">
-              {pagesItems.map((item, index) => (
-                <li className="dropdown-submenu dropdown" key={index}>
-                  <a
-                    // className="dropdown-item dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    data-bs-auto-close="outside"
-                    aria-expanded="false"
-                    className={item.subItems.some(elm=>isActive(elm.link)) ? 'dropdown-item dropdown-toggle active-menu' : 'dropdown-item dropdown-toggle' }
-                    href="#"
-                  >
-                    <span>{item.title}</span>
-                  </a>
-                  <ul className="dropdown-menu">
-                    {item.subItems.map((subMenu, i) => (
-                      <li key={i}>
-                        <Link
-                          href={subMenu.link}
-                          className={`dropdown-item ${
-                            isActive(subMenu.link) ? "active" : ""
-                          }`}
-                        >
-                          <span>{subMenu.title}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-
+            <ul className="dropdown-menu  ">
               <li>
-                <Link href="/pages-menu/pricing" className={isActive("/pages-menu/pricing") ? 'dropdown-item active-menu' : 'dropdown-item'} >
-                  <span>Pricing</span>
+                <Link href="#" className={isActive("#") ? 'dropdown-item active-menu' : 'dropdown-item'} >
+                  <span>D-3 Teknik Elektro</span>
                 </Link>
               </li>
               <li>
-                <Link href="/pages-menu/testimonials" className={isActive("/pages-menu/testimonials") ? 'dropdown-item active-menu' : 'dropdown-item'}>
-                  <span>Testimonials</span>
+                <Link href="#" className={isActive("#") ? 'dropdown-item active-menu' : 'dropdown-item'} >
+                  <span>D-3 Teknik Listrik</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className={isActive("#") ? 'dropdown-item active-menu' : 'dropdown-item'} >
+                  <span>D-3 Teknik Telekomunikasi</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className={isActive("#") ? 'dropdown-item active-menu' : 'dropdown-item'} >
+                  <span>D-4 Teknik Elektronika</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className={isActive("#") ? 'dropdown-item active-menu' : 'dropdown-item'}>
+                  <span>D-4 Teknik Otomasi Industri</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className={isActive("#") ? 'dropdown-item active-menu' : 'dropdown-item'}>
+                  <span>D-4 Teknik Telekomunikasi</span>
                 </Link>
               </li>
             </ul>
           </li>
           {/* End li (pages) */}
-
           <li className="nav-item dropdown">
             <a
               // className="nav-link dropdown-toggle"
-              className={portfolioItems.some(elm=>isActive(elm.link)) ? 'nav-link dropdown-toggle active-menu' : 'nav-link dropdown-toggle' }
+              className="nav-link nav-link " 
               href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
             >
               Dosen
             </a>
-            <ul className="dropdown-menu">
-              {portfolioItems.map((item, index) => (
-                <li key={index}>
-                  <Link
-                    href={item.link}
-                    className={`dropdown-item ${
-                      isActive(item.link) ? "active" : ""
-                    }`}
-                  >
-                    <span>{item.name}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </li>
           {/* End li (portfolio) */}
 

@@ -34,7 +34,7 @@ const WebHosting = () => {
 				Partner Section Four
 			============================================== 
 			*/}
-      <div className="partner-section-four position-relative pt-100 sm-pt-70">
+      <div className="partner-section-four position-relative pt-20 sm-pt-70">
         <div className="wrapper m-auto">
           <div className="partner_slider_one row">
             <Partner />
@@ -43,67 +43,33 @@ const WebHosting = () => {
         {/* /.wrapper */}
       </div>
       {/* /.partner-section-four */}
-
-      <>
-        {/* 
-			=============================================
-				Pricing Section Four
-			============================================== 
-			*/}
-        <div className="pricing-section-four pt-170 lg-pt-100">
-          <div className="container">
-            <div className="row">
-              <div className="col-xxl-10 col-md-9 m-auto">
-                <div
-                  className="title-style-seven text-center"
-                  data-aos="fade-up"
-                >
-                  <h2 className="main-title fw-bold tx-dark">
-                    Solo, Agency or Team? We’ve got you
-                    <span className="position-relative d-inline-block">
-                      covered
-                      <img src="/images/shape/shape_96.svg" alt="shape" />
-                    </span>
-                  </h2>
-                </div>
-                {/* /.title-style-seven */}
-              </div>
-            </div>
-          </div>
-          {/* End .container */}
-
-          <div className="wrapper pricing-table-area-four m-auto pt-80 lg-pt-30">
-            <div className="row">
-              <Pricing />
-            </div>
-          </div>
-          {/* /.pricing-table-area-four */}
-          <div className="wrapper position-relative">
-            <CourseFilter />
-            {/* /.slider-wrapper */}
-          </div>
-          {/* /.wrapper */}
-
-          <div className="container">
-            <div className="text-center mt-100 lg-mt-50 " data-aos="fade-up">
-              <div className="d-inline-block consult-text fs-18 fw-500 tx-dark">
-                Not sure which website hosting plan is right for you? We can
-                help.
-                <a href="#" className="fw-normal text-decoration-underline">
-                  Free Consultation
-                </a>
-              </div>
-            </div>
-          </div>
-          {/* /.container */}
-        </div>
-        {/* /.pricing-section-four */}
+<>
         {/* 
 			=============================================
 				Feature Section Twenty Three
 			============================================== 
 			*/}
-        <div className="fancy-feature-twentyThree mt-180 lg-mt-100">
+        <div className="fancy-feature-twentyThree mt-50 lg-mt-100">
+          <div className="container">
+            <div
+              className="title-style-seven text-center pb-20"
+              data-aos="fade-up"
+            >
+              <h2 className="main-title fw-bold tx-dark">
+                Daftar Dosen
+              </h2>
+            </div>
+            {/* /.title-style-seven */}
+            <div className="row gx-xl-5">
+              <CourseFilter />
+            </div>
+            <div className="row gx-xl-5">
+              <IncludedPlan />
+            </div>
+          </div>
+          {/* /.container */}
+        </div>
+        <div className="fancy-feature-twentyThree mt-180 lg-mt-300">
           <div className="container">
             <div
               className="title-style-seven text-center pb-20"
@@ -119,7 +85,7 @@ const WebHosting = () => {
             </div>
             {/* /.title-style-seven */}
             <div className="row gx-xl-5">
-              <IncludedPlan />
+              <CourseFilter />
             </div>
           </div>
           {/* /.container */}

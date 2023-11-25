@@ -8,10 +8,9 @@ const courseData = [
     imgSrc: "/images/media/img_63.jpg",
     instructor: "Rashed Ka.",
     duration: "53m",
-    title: "Master in Design System in Figam & Sketch",
+    title: "Nama Dosen",
     rating: 4,
-    ratingsCount: 310,
-    price: 17.99,
+    price: 17.949,
     discountedPrice: 29.99,
     tags: ["graphic", "it", "language", "coding"],
   },
@@ -20,11 +19,10 @@ const courseData = [
     imgSrc: "/images/media/img_64.jpg",
     instructor: "Zubayer Al Hasan",
     duration: "8h",
-    title: "Master in Bootstrap only within 30 days.",
+    title: "Nama Dosen",
     rating: 4,
-    ratingsCount: 180,
-    price: 13.99,
-    discountedPrice: 19.99,
+    price: 13,
+    discountedPrice: 19.299,
     tags: ["art", "marketing", "it", "coding"],
   },
   {
@@ -32,7 +30,7 @@ const courseData = [
     imgSrc: "/images/media/img_65.jpg",
     instructor: "Rashed Ka.",
     duration: "53m",
-    title: "Master in Design System in Figam & Sketch",
+    title: "Nama Dosen",
     rating: 4,
     ratingsCount: 310,
     price: 17.99,
@@ -44,7 +42,7 @@ const courseData = [
     imgSrc: "/images/media/img_66.jpg",
     instructor: "Zubayer Al Hasan",
     duration: "8h",
-    title: "Master in Bootstrap only within 30 days.",
+    title: "Nama Dosen",
     rating: 4,
     ratingsCount: 180,
     price: 13.99,
@@ -56,7 +54,7 @@ const courseData = [
     imgSrc: "/images/media/img_64.jpg",
     instructor: "Zubayer Al Hasan",
     duration: "8h",
-    title: "Master in Bootstrap only within 30 days.",
+    title: "Nama Dosen",
     rating: 4,
     ratingsCount: 180,
     price: 13.99,
@@ -68,7 +66,7 @@ const courseData = [
     imgSrc: "/images/media/img_65.jpg",
     instructor: "Zubayer Al Hasan",
     duration: "8h",
-    title: "Master in Bootstrap only within 30 days.",
+    title: "Nama Dosen",
     rating: 4,
     ratingsCount: 180,
     price: 13.99,
@@ -117,7 +115,7 @@ const CourseFilter = () => {
   return (
     <>
       <ul
-        className="nav nav-tabs border-0 mb-130 lg-mb-80 md-mb-30"
+        className="nav nav-tabs border-0 mb-30 lg-mb-80 md-mb-30"
         role="tablist"
         data-aos="fade-up"
       >
@@ -135,7 +133,7 @@ const CourseFilter = () => {
               className={filter === "graphic" ? "active nav-link" : "nav-link"}
               onClick={() => setFilter("graphic")}
             >
-              Graphic Design
+              Dosen
             </button>
           </li>
           <li className="nav-item">
@@ -143,47 +141,12 @@ const CourseFilter = () => {
               className={filter === "it" ? "active nav-link" : "nav-link"}
               onClick={() => setFilter("it")}
             >
-              IT
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              className={filter === "language" ? "active nav-link" : "nav-link"}
-              onClick={() => setFilter("language")}
-            >
-              Language
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              className={filter === "coding" ? "active nav-link" : "nav-link"}
-              onClick={() => setFilter("coding")}
-            >
-              Coding
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              className={filter === "art" ? "active nav-link" : "nav-link"}
-              onClick={() => setFilter("art")}
-            >
-              Art
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              className={
-                filter === "marketing" ? "active nav-link" : "nav-link"
-              }
-              onClick={() => setFilter("marketing")}
-            >
-              Marketing
+              Berita
             </button>
           </li>
         </ul>
       </ul>
       {/* End ul */}
-
       <div className="slider-wrapper">
         <div
           className="tab-content position-relative zn2 course_slider_one"
@@ -215,34 +178,6 @@ const CourseFilter = () => {
                     <a href="#" className="course-title fw-500">
                       {course.title}
                     </a>
-                    <div className="course-review d-flex align-items-center">
-                      <ul className="style-none d-flex rating">
-                        {Array.from({ length: course.rating }, (_, i) => (
-                          <li className="active" key={i}>
-                            <i className="bi bi-star-fill" />
-                          </li>
-                        ))}
-                        {Array.from({ length: 5 - course.rating }, (_, i) => (
-                          <li key={i}>
-                            <i className="bi bi-star-fill" />
-                          </li>
-                        ))}
-                      </ul>
-                      <span className="fs-15 tx-dark ms-1">
-                        ({course.ratingsCount})
-                      </span>
-                    </div>
-                    <div className="d-flex align-items-center justify-content-between mt-30 mb-10">
-                      <strong className="price fw-500 fs-20 tx-dark">
-                        ${course.price.toFixed(2)}{" "}
-                        <del className="opacity-50 fw-normal">
-                          ${course.discountedPrice.toFixed(2)}
-                        </del>
-                      </strong>
-                      <a href="#" className="bookmark" title="Bookmark">
-                        <i className="bi bi-bookmark" />
-                      </a>
-                    </div>
                   </div>
                   {/* /.course-data */}
                 </div>
