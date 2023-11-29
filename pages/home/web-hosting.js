@@ -9,7 +9,6 @@ import Faq from "../../components/home-page/home-2/Faq";
 import Hero from "../../components/home-page/home-2/Hero";
 import IncludedPlan from "../../components/home-page/home-2/IncludedPlan";
 import Partner from "../../components/home-page/home-2/Partner";
-import Pricing from "../../components/home-page/home-2/Pricing";
 import CourseFilter from "../../components/home-page/home-3/CourseFilter";
 
 const WebHosting = () => {
@@ -65,27 +64,6 @@ const WebHosting = () => {
             </div>
             <div className="row gx-xl-5">
               <IncludedPlan />
-            </div>
-          </div>
-          {/* /.container */}
-        </div>
-        <div className="fancy-feature-twentyThree mt-180 lg-mt-300">
-          <div className="container">
-            <div
-              className="title-style-seven text-center pb-20"
-              data-aos="fade-up"
-            >
-              <h2 className="main-title fw-bold tx-dark">
-                All Included
-                <span className="position-relative d-inline-block">
-                  Plan
-                  <img src="/images/shape/shape_97.svg" alt="illustration" />
-                </span>
-              </h2>
-            </div>
-            {/* /.title-style-seven */}
-            <div className="row gx-xl-5">
-              <CourseFilter />
             </div>
           </div>
           {/* /.container */}

@@ -105,5 +105,6 @@ export const navItems = [
   { title: "Service", link: "/pages-menu/service-v1" },
   { title: "Portfolio", link: "/portfolio/portfolio-v1" },
   { title: "Grid With sidebar", link: "/blog/blog-v2" },
+  { title: "Dosen", link: "/" },
   { title: "Contact us", link: "/contact" },
 ];

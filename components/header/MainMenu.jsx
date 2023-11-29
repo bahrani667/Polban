@@ -2,7 +2,6 @@ import Link from "next/link";
 import {
   menuItems,
   pagesItems,
-  portfolioItems,
   blogItems,
 } from "../../data/menu";
 
@@ -49,11 +48,11 @@ const MainMenu = () => {
           <li className="nav-item dropdown mega-dropdown-md">
             <a
               // className="nav-link dropdown-toggle active-menu"
-              href="#"
+              href="/"
               role="button"
               data-bs-auto-close="outside"
               aria-expanded="false"
-              className="nav-link  active-menu "
+              className={menuItems.some(menu=>menu.items.some(elm=>isActive(elm.link))) ? 'nav-link  active-menu' : 'nav-link dropdown-toggle'}
             >
               Home
             </a>
@@ -106,14 +105,14 @@ const MainMenu = () => {
             </ul>
           </li>
           {/* End li (pages) */}
-          <li className="nav-item dropdown">
-            <a
-              // className="nav-link dropdown-toggle"
-              className="nav-link nav-link " 
-              href="#"
-            >
+          <li
+            className={
+              router.pathname === "/dosen" ? "active nav-item" : "nav-item"
+            }
+          >
+            <Link href="/dosen" role="button" className="nav-link">
               Dosen
-            </a>
+            </Link>
           </li>
           {/* End li (portfolio) */}
 
