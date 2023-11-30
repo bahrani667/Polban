@@ -1,9 +1,6 @@
 import { useState } from "react";
 import items from "../../data/portfolio";
-import Link from "next/link";
-import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
-import Image from "next/image";
 
 const PortfolioGallery1 = () => {
   const [filter, setFilter] = useState("*");
@@ -24,80 +21,43 @@ const PortfolioGallery1 = () => {
             All
           </li>
           <li
-            className={filter === "marketing" ? "is-checked" : ""}
-            onClick={() => setFilter("marketing")}
+            className={filter === "D3 Teknik Elektro" ? "is-checked" : ""}
+            onClick={() => setFilter("D3 Teknik Elektro")}
           >
-            Marketing
+            D3 Teknik Elektro
           </li>
           <li
-            className={filter === "application" ? "is-checked" : ""}
-            onClick={() => setFilter("application")}
+            className={filter === "D3 Teknik Listrik" ? "is-checked" : ""}
+            onClick={() => setFilter("D3 Teknik Listrik")}
           >
-            Application
+            D3 Teknik Listrik
           </li>
           <li
-            className={filter === "design" ? "is-checked" : ""}
-            onClick={() => setFilter("design")}
+            className={filter === "D3 Teknik Telekomunikasi" ? "is-checked" : ""}
+            onClick={() => setFilter("D3 Teknik Telekomunikasi")}
           >
-            Design
+            D3 Teknik Telekomunikasi
           </li>
           <li
-            className={filter === "dev" ? "is-checked" : ""}
-            onClick={() => setFilter("dev")}
+            className={filter === "D4 Teknik Elektronika" ? "is-checked" : ""}
+            onClick={() => setFilter("D4 Teknik Elektronika")}
           >
-            Development
+            D4 Teknik Elektronika
+          </li>
+          <li
+            className={filter === "D4 Teknik Otomasi Industri" ? "is-checked" : ""}
+            onClick={() => setFilter("D4 Teknik Otomasi Industri")}
+          >
+            D4 Teknik Otomasi Industri
+          </li>
+          <li
+            className={filter === "D4 Teknik Telekomunikasi" ? "is-checked" : ""}
+            onClick={() => setFilter("D4 Teknik Telekomunikasi")}
+          >
+            D4 Teknik Telekomunikasi
           </li>
         </ul>
-        <div className="row pt-90 lg-pt-50">
-          <Gallery>
-            {filteredItems.map((item) => (
-              <div
-                key={item.id}
-                className={`col-lg-6 col-md-6 ${item.category}`}
-              >
-                <div className="portfolio-block-three position-relative mb-110 lg-mb-90">
-                  <div className="img-meta">
-                    <Image
-                      width={630}
-                      height={500}
-                      src={item.image}
-                      alt="gallary"
-                      className="w-100"
-                    />
-                  </div>
-                  <div className="meta-data tran3s d-flex align-items-center justify-content-between">
-                    <Link
-                      href={`/portfolio/${item.id}`}
-                      className="title tran3s d-flex flex-column"
-                    >
-                      <span className="pj-name tran3s fw-500">{item.name}</span>
-                      <span className="tag">{item.tag}</span>
-                    </Link>
-
-                    <Item
-                      original={item.image}
-                      thumbnail={item.image}
-                      width={630}
-                      height={500}
-                    >
-                      {({ ref, open }) => (
-                        <span
-                          role="button"
-                          title="Click for large view"
-                          className="fancybox expend-btn font-recoleta tran3s"
-                          ref={ref}
-                          onClick={open}
-                        >
-                          +
-                        </span>
-                      )}
-                    </Item>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Gallery>
-        </div>
+  
       </div>
     </div>
   );

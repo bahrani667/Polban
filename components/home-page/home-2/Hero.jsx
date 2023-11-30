@@ -3,7 +3,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className="hero-banner-seven p-30">
-      <div className="bg-wrapper position-relative pt-200 pb-20 md-pt-150">
+      <div className="bg-wrapper position-relative pt-150 pb-20 md-pt-150">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-7" data-aos="fade-right">

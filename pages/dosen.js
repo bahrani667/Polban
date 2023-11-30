@@ -5,6 +5,7 @@ import Footer2 from "../components/footer/Footer2";
 import NewsLetter from "../components/footer/NewsLetter";
 import Header2 from "../components/header/Header2";
 import Team1 from "../components/home-page/home-2/Dosen";
+import TitleDosen from "../components/portfolio/PortfolioGallery1"
 import Headerdosen from "../components/portfolio/PortfolioTopTitle"
 
 const dosen = () => {
@@ -23,7 +24,7 @@ const dosen = () => {
         Feature Section Fifty One
         ============================================== 
         */}
-      <div className="fancy-feature-fiftyOne position-relative mt-200">
+      <div className="fancy-feature-fiftyOne position-relative mt-170">
         <div className="container">
           <div className="row">
             <div className="col-lg-7" data-aos="fade-right">
@@ -44,6 +45,7 @@ const dosen = () => {
         dosen Section One
         ============================================== 
         */}
+               <TitleDosen />
       <div className="dosen-section-one mt-60 lg-mt-30">
         <div className="container">
           <div className="row">
