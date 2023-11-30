@@ -54,13 +54,12 @@ const WebHosting = () => {
               className="title-style-seven text-center pb-20"
               data-aos="fade-up"
             >
-              <h2 className="main-title fw-bold tx-dark">
-                Daftar Dosen
-              </h2>
             </div>
             {/* /.title-style-seven */}
             <div className="row gx-xl-5">
-              <CourseFilter />
+              {
+                //Filter Corse
+              }
             </div>
             <div className="row gx-xl-5">
               <IncludedPlan />

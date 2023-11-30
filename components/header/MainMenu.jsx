@@ -44,18 +44,14 @@ const MainMenu = () => {
             </div>
           </li>
           {/* End li */}
-
-          <li className="nav-item dropdown mega-dropdown-md">
-            <a
-              // className="nav-link dropdown-toggle active-menu"
-              href="/"
-              role="button"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
-              className={menuItems.some(menu=>menu.items.some(elm=>isActive(elm.link))) ? 'nav-link  active-menu' : 'nav-link dropdown-toggle'}
-            >
+          <li
+            className={
+              router.pathname === "/" ? "active nav-item" : "nav-item"
+            }
+          >
+            <Link href="/" role="button" className="nav-link">
               Home
-            </a>
+            </Link>
           </li>
           {/* End li (home mega menu) */}
 
@@ -114,37 +110,15 @@ const MainMenu = () => {
               Dosen
             </Link>
           </li>
-          {/* End li (portfolio) */}
-
-          <li className="nav-item dropdown">
-            <a
-              // className="nav-link dropdown-toggle"
-              className={blogItems.some(elm=>isActive(elm.link)) ? 'nav-link dropdown-toggle active-menu' : 'nav-link dropdown-toggle' }
-             
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
-            >
+          <li
+            className={
+              router.pathname === "/blog/blog-v2" ? "active nav-item" : "nav-item"
+            }
+          >
+            <Link href="/blog/blog-v2" role="button" className="nav-link">
               Berita
-            </a>
-            <ul className="dropdown-menu">
-              {blogItems.map((blog, index) => (
-                <li key={index}>
-                  <Link
-                    href={blog.link}
-                    className={`dropdown-item ${
-                      isActive(blog.link) ? "active" : ""
-                    }`}
-                  >
-                    <span>{blog.text}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            </Link>
           </li>
-          {/* End li (blog) */}
 
           <li
             className={

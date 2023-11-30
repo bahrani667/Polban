@@ -5,6 +5,7 @@ import Footer2 from "../components/footer/Footer2";
 import NewsLetter from "../components/footer/NewsLetter";
 import Header2 from "../components/header/Header2";
 import Team1 from "../components/home-page/home-2/Dosen";
+import Headerdosen from "../components/portfolio/PortfolioTopTitle"
 
 const dosen = () => {
   return (
@@ -22,20 +23,22 @@ const dosen = () => {
         Feature Section Fifty One
         ============================================== 
         */}
-    <div className="hero-banner-seven p-30">
-      <div className="fancy-feature-fiftyOne position-relative mt-250 lg-mt-150">
+      <div className="fancy-feature-fiftyOne position-relative mt-200">
         <div className="container">
           <div className="row">
-            <div className="col-lg-7 text-center m-auto wow fadeInUp">
+            <div className="col-lg-7" data-aos="fade-right">
               <div className="title-style-five mb-65 lg-mb-40">
-                <h2 className="main-title fw-500 tx-dark">Daftar Dosen</h2>
+                <div className="sc-title-two fst-italic position-relative">
+                  Dosen
+                </div>
+                <h2 className="main-title fw-500 tx-dark">
+                  Check our inside news &amp; update.
+                </h2>
               </div>
             </div>
           </div>
         </div>
         </div>
-        {/* /.container */}
-      </div>
       {/* 
         =============================================
         dosen Section One

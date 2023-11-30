@@ -6,10 +6,10 @@ const PortfolioTopTitle = () => {
           <div className="col-lg-7" data-aos="fade-right">
             <div className="title-style-five mb-65 lg-mb-40">
               <div className="sc-title-two fst-italic position-relative">
-                Our Recent Work
+                Dosen
               </div>
               <h2 className="main-title fw-500 tx-dark">
-                Check out our Portfolio.
+                Teknik Elektro.
               </h2>
             </div>
           </div>

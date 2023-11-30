@@ -33,7 +33,7 @@ const GridWithSidebar = () => {
 			Feature Section Fifty One
 			============================================== 
 			*/}
-      <div className="fancy-feature-fiftyOne position-relative mt-200">
+      <div className="bg-wrapper position-relative fancy-feature-fiftyOne position-relative mt-170">
         <div className="container">
           <div className="row">
             <div className="col-lg-7" data-aos="fade-right">
