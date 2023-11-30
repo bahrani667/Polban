@@ -64,8 +64,8 @@ export const pagesItems = [
   },
 ];
 
-export const portfolioItems = [
-  { name: "Portfolio 01", link: "/portfolio/portfolio-v1" },
+export const jurusan = [
+  { name: "D3 Teknik Elektro", link: "/portfolio/portfolio-v1" },
   { name: "Portfolio 02", link: "/portfolio/portfolio-v2" },
   { name: "Portfolio 03", link: "/portfolio/portfolio-v3" },
   { name: "Portfolio 04", link: "/portfolio/portfolio-v4" },

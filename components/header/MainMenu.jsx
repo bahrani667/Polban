@@ -69,12 +69,12 @@ const MainMenu = () => {
             </a>
             <ul className="dropdown-menu  ">
               <li>
-                <Link href="#" className={isActive("#") ? 'dropdown-item active-menu' : 'dropdown-item'} >
+                <Link href="/Jurusan/d3-teknik-elektro" className={isActive("#") ? 'dropdown-item active-menu' : 'dropdown-item'} >
                   <span>D-3 Teknik Elektro</span>
                 </Link>
               </li>
               <li>
-                <Link href="#" className={isActive("#") ? 'dropdown-item active-menu' : 'dropdown-item'} >
+                <Link href="" className={isActive("#") ? 'dropdown-item active-menu' : 'dropdown-item'} >
                   <span>D-3 Teknik Listrik</span>
                 </Link>
               </li>
