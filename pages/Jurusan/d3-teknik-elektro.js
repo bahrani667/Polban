@@ -1,6 +1,6 @@
 import Seo from "../../components/common/Seo";
 import Header5 from "../../components/header/Header2";
-import Quote from "../../components/home-page/home-5/Quote";
+import Visi from "../../components/home-page/home-5/visi";
 import About from "../../components/home-page/home-5/about";
 import Testimonial from "../../components/home-page/home-5/Testimonial";
 import Blog from "../../components/home-page/home-5/Blog";
@@ -38,7 +38,7 @@ const RealEstate = () => {
       <div className="fancy-feature-fortySix position-relative">
         <div className="container">
           <div className="line-bg-wrapper position-relative pt-20 pb-180 lg-pt-20 md-pb-130">
-            <Quote />
+            <Visi />
             {/* /.quote-wrapper */}
 
             <div className="shapes shape-two" />

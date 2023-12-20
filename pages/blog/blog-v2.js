@@ -6,17 +6,7 @@ import Category from "../../components/blog/Category";
 import RecentPost from "../../components/blog/RecentPost";
 import BannerPost from "../../components/blog/BannerPost";
 import Blog2 from "../../components/blog/Blog2";
-import CopyrightFooter2 from "../../components/footer/CopyrightFooter2";
-import Footer2 from "../../components/footer/Footer2";
-import NewsLetter from "../../components/footer/NewsLetter";
 import Header2 from "../../components/header/Header2";
-import FancyBlock from "../../components/home-page/home-2/FancyBlock";
-import Faq from "../../components/home-page/home-2/Faq";
-import Hero from "../../components/home-page/home-2/Hero";
-import IncludedPlan from "../../components/home-page/home-2/IncludedPlan";
-import Partner from "../../components/home-page/home-2/Partner";
-import CourseFilter from "../../components/home-page/home-3/CourseFilter";
-
 const GridWithSidebar = () => {
   return (
     <>
