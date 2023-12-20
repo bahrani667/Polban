@@ -4,7 +4,8 @@ import Quote from "../../components/home-page/home-5/Quote";
 import About from "../../components/home-page/home-5/about";
 import Testimonial from "../../components/home-page/home-5/Testimonial";
 import Blog from "../../components/home-page/home-5/Blog";
-import Footer from "../../components/footer/CopyrightFooter2";
+import Footer from "../../components/home-page/home-5/footer";
+import Team4 from "../../components/team/Team4";
 import Link from "next/link";
 import Image from "next/image";
 
