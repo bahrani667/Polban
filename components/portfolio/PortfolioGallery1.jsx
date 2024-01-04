@@ -1,5 +1,6 @@
 import { useState } from "react";
-import items from "../../data/portfolio";
+import items from "../../data/dosen";
+import Link from "next/link";
 import "photoswipe/dist/photoswipe.css";
 
 const PortfolioGallery1 = () => {
@@ -8,7 +9,7 @@ const PortfolioGallery1 = () => {
   const filteredItems =
     filter === "*"
       ? items.slice(0, 8)
-      : items.slice(0, 8).filter((item) => item.category.includes(filter));
+      : items.slice(0, 8).filter((item) => item.tag.includes(filter));
 
   return (
     <div className="portfolio-gallery-three pt-30">
@@ -23,7 +24,7 @@ const PortfolioGallery1 = () => {
           <li
             className={filter === "D3 Teknik Elektro" ? "is-checked" : ""}
             onClick={() => setFilter("D3 Teknik Elektro")}
-          >
+          >   
             D3 Teknik Elektro
           </li>
           <li

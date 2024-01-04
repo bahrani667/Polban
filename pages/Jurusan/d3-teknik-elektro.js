@@ -37,19 +37,8 @@ const RealEstate = () => {
         */}
       <div className="fancy-feature-fortySix position-relative">
         <div className="container">
-          <div className="line-bg-wrapper position-relative pt-20 pb-180 lg-pt-20 md-pb-130">
-            <Visi />
-            {/* /.quote-wrapper */}
-
-            <div className="shapes shape-two" />
-
-            <img
-              src="/images/assets/sticker_02.png"
-              alt="sticker"
-              className="lazy-img shapes shape-four"
-            />
-            <div className="shapes shape-five" />
-            <div className="shapes shape-six" />
+          <div className="line-bg-wrapper position-relative pt-20">
+          <Visi />
           </div>
           {/* /.line-bg-wrapper */}
         </div>
