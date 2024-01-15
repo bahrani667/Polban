@@ -46,13 +46,6 @@ const dosen = () => {
         ============================================== 
         */}
                <TitleDosen />
-      <div className="dosen-section-one mt-60 lg-mt-30">
-        <div className="container">
-          <div className="row">
-          <Team1 />
-          </div>
-    </div>
-    </div>
       {/*
 		=====================================================
 		Footer
