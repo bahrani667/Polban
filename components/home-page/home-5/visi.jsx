@@ -10,28 +10,29 @@ const Visi = () => {
   // Data for each filter option
   const filterData = {
     'VISI & MISI': {
-      title: 'Visi Program Studi DIII Teknik Listrik',
-      content:
-        'Menjadi program studi yang unggul dan terdepan dalam pendidikan vokasi yang inovatif dan adaptif terhadap perkembangan ilmu pengetahuan dan teknologi terapan di bidang ketenagalistrikan.',
+      title: 'Visi Program Studi DIII Teknik Mesin',
+      content: 'Menjadi program studi DIII Teknik Mesin yang unggul dan terkemuka dalam mendidik tenaga terampil di bidang permesinan.'
     },
     'PROFIL LULUSAN': {
-      title: 'Misi',
-      content:
-        '1. Menyelenggarakan pendidikan untuk menghasilkan lulusan yang kompeten dalam bidang ketenagalistrikan yang memiliki semangat terus berkembang, bermoral, berjiwa kewirausahaan dan berwawasan lingkungan.\n\n2. Melaksanakan penelitian terapan dan menyebarluaskan hasilnya untuk mengembangkan ilmu pengetahuan dan teknologi di bidang ketenagalistrikan.\n\n3. Melaksanakan kegiatan pengabdian kepada masyarakat melalui pemanfaatan ilmu pengetahuan dan teknologi di bidang ketenagalistrikan untuk mendukung peningkatan mutu kehidupan.',
-    },
-    'D3 Teknik Telekomunikasi': {
-      title: 'Capaian Pembelajaran',
-      content: 'Isikan dengan data untuk D3 Teknik Telekomunikasi.',
+      title: 'Misi', 
+      content: 
+        'Menyelenggarakan pendidikan DIII Teknik Mesin yang berkualitas untuk menghasilkan lulusan yang kompeten dan berakhlak mulia. \n' +
+        'Melaksanakan penelitian terapan bidang permesinan untuk menunjang proses pembelajaran dan kemajuan industri. \n' + 
+        'Menjalankan pengabdian masyarakat melalui inovasi dan pelatihan untuk meningkatkan kesejahteraan.'
     },
     'CAPAIAN PEMBELAJARAN': {
       title: 'Capaian Pembelajaran',
-      content: 'Isikan dengan data untuk capaian pembelajaran.',
+      content: 'Mengacu pada capaian pembelajaran yang ditetapkan KURMEPIN.'
     },
     'KEUNGGULAN': {
       title: 'Keunggulan',
-      content: 'Isikan dengan data untuk keunggulan program studi.',
-    },
+      content: 
+        'Sarana dan Prasarana yang memadai. \n' +
+        'Kerja sama industri yang kuat. \n' +
+        '3. Dosen dan staff yang kompeten.'
+    }
   };
+
 
   const { title, content } = filterData[filter];
 
@@ -40,15 +41,14 @@ const Visi = () => {
       <div className="container">
         <ul className="style-none text-center isotop-menu-wrapper g-control-nav-two">
           {Object.keys(filterData).map((key) => (
-            <FilterItem
+            <FilterItem 
               key={key}
               label={key}
               active={filter === key}
-              onClick={() => handleFilterClick(key)}
+              onClick={() => handleFilterClick(key)} 
             />
           ))}
         </ul>
-
         <div className="filter-content">
           <table>
             <thead>
@@ -58,7 +58,14 @@ const Visi = () => {
             </thead>
             <tbody>
               <tr>
-                <td>{content}</td>
+                <td>
+                  {/* Menambah elemen <ol> untuk penomoran otomatis */}
+                  <ol>
+                    {content.split('\n').map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ol>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -66,12 +73,13 @@ const Visi = () => {
       </div>
     </div>
   );
+  
 };
 
 const FilterItem = ({ label, active, onClick }) => {
   return (
     <li className={active ? 'is-checked' : ''} onClick={onClick}>
-      {label}
+      {label} 
     </li>
   );
 };

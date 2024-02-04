@@ -23,9 +23,22 @@ const RealEstate = () => {
         Theme Inner Banner
         ============================================== 
         */}
-      <div className="inner-banner-one text-center">
+      <div className="inner-banner-one hero-banner-five text-center">
         <div className="container">
-          <h2 className="title fw-500 tx-dark">D4 TEKNIK ELEKTRO</h2>
+        <div className="row">
+          <div
+            className="col-xl-10 m-auto "
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1500"
+          >
+            <h1 className="hero-heading text-back mb-50 md-mb-30">
+              <span className="position-relative">
+              </span>
+              <br /> D3-TEKNIK ELEKTRO
+            </h1>
+          </div>
+        </div>
         </div>
       </div>
       {/* /.inner-banner-one */}
