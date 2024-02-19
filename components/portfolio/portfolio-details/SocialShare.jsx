@@ -1,13 +1,15 @@
+import React from "react";
+
 const SocialShare = () => {
   const socialMedia = [
     {
-      name: "Facebook",
-      icon: "fab fa-facebook-f",
+      name: "Scholar",
+      icon: "fab fa-google",
       url: "#",
     },
     {
-      name: "Twitter",
-      icon: "fab fa-twitter",
+      name: "Sicopus",
+      icon: "fab fa-Socopus",
       url: "#",
     },
     {

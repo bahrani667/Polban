@@ -9,8 +9,8 @@ const PortfolioGallery1 = () => {
 
   const filteredItems =
     filter === "*"
-      ? items.slice(0, 8)
-      : items.slice(0, 8).filter((item) => item.tag.includes(filter));
+      ? items.slice(0, 100)
+      : items.slice(0, 100).filter((item) => item.tag.includes(filter));
 
   // Helper function to truncate text
   const truncateText = (text, maxLength) => {
