@@ -9,7 +9,7 @@ const SocialShare = () => {
     },
     {
       name: "Sicopus",
-      icon: "fab fa-Socopus",
+      icon: "fab fa-instagram",
       url: "#",
     },
     {
@@ -17,6 +17,7 @@ const SocialShare = () => {
       icon: "fab fa-linkedin-in",
       url: "#",
     },
+    
   ];
 
   return (

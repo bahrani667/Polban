@@ -8,13 +8,13 @@ const Hero = () => {
           <div className="row">
             <div className="col-lg-6 col-md-7" data-aos="fade-right">
               <h1 className="hero-heading fw-bold tx-dark mt-25">
-              Teknik Elektro
+                Teknik Elektro
               </h1>
               <p className="text-lg mb-70 pt-35 pe-xxl-5 md-pt-30 lg-mb-40">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                Jurusan Teknik Elektro merupakan salah satu jurusan unggulan di Politeknik Negeri Bandung dengan visi menjadi pusat pendidikan vokasi kelas dunia di bidang teknik elektro. Jurusan ini telah banyak melahirkan alumni-alumni hebat yang saat ini menjadi insinyur profesional di berbagai perusahaan ternama.
               </p>
               <Link
-                href="#"
+                href="https://polban.ac.id"
                 className="btn-fourteen fw-500 tran3s"
               >
                 JOIN

@@ -8,7 +8,7 @@ import CallToAction from "../../components/portfolio/CallToAction";
 import PortfolioGallery from "../../components/portfolio/portfolio-details/PortfolioGallery";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import portfolioData from "../../data/dosen";
+import dosenData from "../../data/dosen";
 import PortfolioDetailsTitle from "../../components/portfolio/portfolio-details/PortfolioDetailsTitle";
 
 const DynamicPortfolioDetails = () => {
@@ -18,7 +18,7 @@ const DynamicPortfolioDetails = () => {
 
   useEffect(() => {
     if (!id) <h1>Loading...</h1>;
-    else setPortfolio(portfolioData.find((item) => item.id == id));
+    else setPortfolio(dosenData.find((item) => item.id == id));
 
     return () => {};
   }, [id]);
@@ -57,6 +57,8 @@ const DynamicPortfolioDetails = () => {
 
               <div className="col-lg-4" data-aos="fade-left">
                 <div className="sidebar ms-xl-5">
+                  <img src="/images/media/img_92.jpg" alt="Foto Anda" class="w-100 h-100">
+                </img>
                   <h3 className="mb-20">About</h3>
                   <p className="border-bottom pb-40 mb-35 lg-pb-20">
                     The Internet advertising famous today behaved lately.
