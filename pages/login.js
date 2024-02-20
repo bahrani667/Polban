@@ -44,6 +44,11 @@ const LogIn = () => {
             </p>
           </div>
           <LoginForm />
+          <Link href="/api/auth/signin" className="go-back-btn fw-500 tran3s">
+  <button className="btn-twentyTwo w-100 fw-500 tran3s text-uppercase mt-30" style={{ backgroundColor: '#24292e', color: '#ffffff', borderRadius: '6px', padding: '12px 16px', border: 'none', cursor: 'pointer', transition: 'background-color 0.3s' }}>
+    GitHub
+  </button>
+</Link>
         </div>
         {/* End form-wrapper */}
 

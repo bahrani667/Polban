@@ -58,6 +58,7 @@ export const pagesItems = [
     subItems: [
       { title: "FAQ", link: "/pages-menu/faq" },
       { title: "Signin", link: "/login" },
+      { title: "github", link: "/api/auth/signin" },
       { title: "Signup", link: "/signup" },
       { title: "404 Error", link: "/404" },
     ],
