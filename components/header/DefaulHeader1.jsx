@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import MainMenu from "./MainMenu";
 import Link from "next/link";
+import Image from "next/image";
 
 const DefaulHeader = () => {
   const [navbar, setNavbar] = useState(false);
@@ -22,7 +23,7 @@ const DefaulHeader = () => {
 
   return (
     <header
-      className={`theme-main-menu sticky-menu theme-menu-six ${
+      className={`theme-main-menu sticky-menu theme-menu-eight border-bottom ${
         navbar ? "fixed" : ""
       }`}
     >
@@ -30,25 +31,26 @@ const DefaulHeader = () => {
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo order-lg-0">
             <Link href="/" className="d-block">
-              <img src="/images/logo/Polban.png" alt="" width={60} />
+              <Image
+                src="/images/logo/logo_01.png"
+                alt="logo"
+                width={95}
+                height={30}
+              />
             </Link>
-           <h3 className="hero-heading fw-bold tx-blue mt-">  
-           </h3>
           </div>
-          {/* End logo */}
           <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
             <Link
               href="/login"
-              className="login-btn-two fw-500 d-flex align-items-center me-3 me-xl-5"
+              className="login-btn-three rounded-circle tran3s me-3"
             >
-              <img src="/images/icon/icon_62.svg" alt="" className="me-2" />
-              <span>login</span>
+              <i className="bi bi-person" />
             </Link>
             <Link
               href="/contact"
-              className="start-btn-one fs-18 fw-500 tran3s position-relative d-none d-lg-block"
+              className="btn-twentyOne fw-500 tran3s d-none d-lg-block"
             >
-              Get Started
+              Contact us
             </Link>
           </div>{" "}
           {/* /.right-widget */}

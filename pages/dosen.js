@@ -3,7 +3,7 @@ import Seo from "../components/common/Seo";
 import CopyrightFooter2 from "../components/footer/CopyrightFooter2";
 import Footer2 from "../components/footer/Footer2";
 import NewsLetter from "../components/footer/NewsLetter";
-import Header2 from "../components/header/Header2";
+import DefaulHeader from "../components/header/DefaulHeader";
 import Team1 from "../components/home-page/home-2/Dosen";
 import TitleDosen from "../components/portfolio/PortfolioGallery1"
 import Headerdosen from "../components/portfolio/PortfolioTopTitle"
@@ -11,13 +11,13 @@ import Headerdosen from "../components/portfolio/PortfolioTopTitle"
 const dosen = () => {
   return (
     <>
-      <Seo pageTitle="dosen" />
+      <Seo pageTitle="Dosen Polban" />
       {/* <!-- 
       =============================================
       Theme Default Menu
       ============================================== 	
       --> */}
-      <Header2 />
+      <DefaulHeader />
 
       {/* 
         =============================================

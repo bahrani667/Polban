@@ -1,5 +1,5 @@
 import Wrapper from "../layout/wrapper";
-import Insurance from "./home/web-hosting";
+import Insurance from "./home/polban";
 
 const MainRoot = () => {
   return (

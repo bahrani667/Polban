@@ -3,23 +3,22 @@ import Seo from "../../components/common/Seo";
 import CopyrightFooter2 from "../../components/footer/CopyrightFooter2";
 import Footer2 from "../../components/footer/Footer2";
 import NewsLetter from "../../components/footer/NewsLetter";
-import Header2 from "../../components/header/Header2";
+import DefaulHeader from "../../components/header/DefaulHeader";
 import FancyBlock from "../../components/home-page/home-2/FancyBlock";
 import Faq from "../../components/home-page/home-2/Faq";
 import Hero from "../../components/home-page/home-2/Hero";
 import IncludedPlan from "../../components/home-page/home-2/IncludedPlan";
 import Partner from "../../components/home-page/home-2/Partner";
-import CourseFilter from "../../components/home-page/home-3/CourseFilter";
 
 const WebHosting = () => {
   return (
     <>
-      <Seo pageTitle="Teknik Telekomunikasi" />
+      <Seo pageTitle="Teknik Elektro"/>
 
       {/* <!--  =============================================
       Theme Header2 Menu
       ============================================== 	--> */}
-      <Header2 />
+      <DefaulHeader />
 
       {/* <!-- 
 			=============================================
